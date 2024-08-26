@@ -1,6 +1,6 @@
 from pwn import *
 
-p = process(["python", "vuln_clean.py"])
+p = process(["python", "challenge/vuln_clean.py"])
 
 with open("shellcode/basic/version3", "rb") as f:
     data = f.read()
